@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 1499
+  Height = 872
+  Top = 115
+  Width = 410
+  Caption = 'Form1'
+  ClientHeight = 872
+  ClientWidth = 410
+  LCLVersion = '3.2.0.0'
+  object EditA: TEdit
+    Left = 88
+    Height = 23
+    Top = 160
+    Width = 80
+    TabOrder = 0
+    OnChange = EditAChange
+  end
+  object EditB: TEdit
+    Left = 88
+    Height = 23
+    Top = 208
+    Width = 80
+    TabOrder = 1
+  end
+  object EditH: TEdit
+    Left = 88
+    Height = 23
+    Top = 248
+    Width = 80
+    TabOrder = 2
+    OnChange = EditHChange
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 160
+    Width = 55
+    Caption = 'Введите a:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 208
+    Width = 56
+    Caption = 'Введите b:'
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 248
+    Width = 56
+    Caption = 'Введите h:'
+  end
+  object MemoResult: TMemo
+    Left = 40
+    Height = 122
+    Top = 17
+    Width = 344
+    TabOrder = 3
+  end
+  object ButtonCalculate: TButton
+    Left = 288
+    Height = 25
+    Top = 272
+    Width = 75
+    Caption = 'Вычислить'
+    TabOrder = 4
+    OnClick = ButtonCalculateClick
+  end
+end

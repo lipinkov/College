@@ -1,0 +1,134 @@
+object Net: TNet
+  Left = 551
+  Height = 320
+  Top = 338
+  Width = 869
+  BorderStyle = bsSingle
+  Caption = 'Калькулятор объемов'
+  ClientHeight = 320
+  ClientWidth = 869
+  LCLVersion = '3.2.0.0'
+  object cbFigureType: TComboBox
+    Left = 24
+    Height = 23
+    Top = 104
+    Width = 218
+    ItemHeight = 15
+    Items.Strings = (
+      'Куб'
+      'Сфера'
+      'Цилиндр'
+      'Конус'
+    )
+    Style = csDropDownList
+    TabOrder = 0
+    OnChange = cbFigureTypeChange
+  end
+  object edParam1: TEdit
+    Left = 304
+    Height = 23
+    Top = 104
+    Width = 88
+    TabOrder = 1
+    Visible = False
+  end
+  object edParam2: TEdit
+    Left = 456
+    Height = 23
+    Top = 104
+    Width = 88
+    TabOrder = 2
+    Visible = False
+  end
+  object edParam3: TEdit
+    Left = 720
+    Height = 23
+    Top = 104
+    Width = 80
+    TabOrder = 3
+    Visible = False
+  end
+  object lblParam1: TLabel
+    Left = 304
+    Height = 17
+    Top = 72
+    Width = 132
+    Caption = 'Введите параметр 1:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object lblParam2: TLabel
+    Left = 456
+    Height = 17
+    Top = 72
+    Width = 132
+    Caption = 'Введите параметр 2:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object lblParam3: TLabel
+    Left = 720
+    Height = 17
+    Top = 72
+    Width = 132
+    Caption = 'Введите параметр 3:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object btnCalculate: TButton
+    Left = 24
+    Height = 25
+    Top = 184
+    Width = 128
+    Caption = 'Рассчитать'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnCalculateClick
+  end
+  object lblResult: TLabel
+    Left = 176
+    Height = 21
+    Top = 184
+    Width = 76
+    Caption = 'Результат'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 25
+    Top = 64
+    Width = 174
+    Caption = 'Выберите фигуру:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+end

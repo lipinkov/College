@@ -1,0 +1,118 @@
+object fEdit: TfEdit
+  Left = 1205
+  Height = 300
+  Top = 407
+  Width = 400
+  BorderStyle = bsDialog
+  Caption = 'Редактор товара'
+  ClientHeight = 300
+  ClientWidth = 400
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 10
+    Height = 15
+    Top = 10
+    Width = 54
+    Caption = 'ID товара:'
+  end
+  object eProductID: TEdit
+    Left = 10
+    Height = 23
+    Top = 30
+    Width = 360
+    TabOrder = 0
+    OnChange = eProductIDChange
+  end
+  object Label2: TLabel
+    Left = 10
+    Height = 15
+    Top = 60
+    Width = 95
+    Caption = 'Название товара:'
+  end
+  object eProductName: TEdit
+    Left = 10
+    Height = 23
+    Top = 80
+    Width = 360
+    TabOrder = 1
+    OnChange = eProductNameChange
+  end
+  object Label3: TLabel
+    Left = 10
+    Height = 15
+    Top = 110
+    Width = 68
+    Caption = 'Количество:'
+  end
+  object eQuantity: TEdit
+    Left = 10
+    Height = 23
+    Top = 130
+    Width = 360
+    TabOrder = 2
+    OnChange = eQuantityChange
+  end
+  object Label4: TLabel
+    Left = 10
+    Height = 15
+    Top = 160
+    Width = 94
+    Caption = 'Цена за единицу:'
+  end
+  object ePricePerUnit: TEdit
+    Left = 10
+    Height = 23
+    Top = 180
+    Width = 360
+    TabOrder = 3
+    OnChange = ePricePerUnitChange
+  end
+  object Label5: TLabel
+    Left = 10
+    Height = 15
+    Top = 210
+    Width = 107
+    Caption = 'Скоропортящийся:'
+  end
+  object cbIsPerishable: TComboBox
+    Left = 10
+    Height = 23
+    Top = 230
+    Width = 360
+    ItemHeight = 15
+    Items.Strings = (
+      'Да'
+      'Нет'
+    )
+    Style = csDropDownList
+    TabOrder = 4
+    OnChange = cbIsPerishableChange
+  end
+  object bSave: TBitBtn
+    Left = 50
+    Height = 30
+    Top = 260
+    Width = 75
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = bSaveClick
+    TabOrder = 5
+  end
+  object bCancel: TBitBtn
+    Left = 220
+    Height = 30
+    Top = 260
+    Width = 75
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = bCancelClick
+    TabOrder = 6
+  end
+end

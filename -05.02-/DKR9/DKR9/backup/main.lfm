@@ -1,0 +1,142 @@
+object Form1: TForm1
+  Left = 1000
+  Height = 450
+  Top = 102
+  Width = 783
+  BorderStyle = bsDialog
+  Caption = 'Инвентарь товаров'
+  ClientHeight = 450
+  ClientWidth = 783
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 96
+    Top = 0
+    Width = 783
+    Align = alTop
+    ClientHeight = 96
+    ClientWidth = 783
+    Color = clSilver
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object bAdd: TSpeedButton
+      Left = 8
+      Height = 22
+      Top = 8
+      Width = 168
+      Caption = 'Добавить товар'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = bAddClick
+      ParentFont = False
+    end
+    object bEdit: TSpeedButton
+      Left = 200
+      Height = 22
+      Top = 8
+      Width = 168
+      Caption = 'Редактировать товар'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -13
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = bEditClick
+      ParentFont = False
+    end
+    object bDel: TSpeedButton
+      Left = 392
+      Height = 22
+      Top = 8
+      Width = 168
+      Caption = 'Удалить товар'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = bDelClick
+      ParentFont = False
+    end
+    object bSort: TSpeedButton
+      Left = 592
+      Height = 22
+      Top = 8
+      Width = 168
+      Caption = 'Сортировать'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = bSortClick
+      ParentFont = False
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 354
+    Top = 96
+    Width = 783
+    Align = alClient
+    Columns = <    
+      item
+        Title.Caption = 'ID товара:'
+        Width = 127
+      end    
+      item
+        Title.Caption = 'Название товара:'
+        Width = 257
+      end    
+      item
+        Title.Caption = 'Количество(шт.):'
+        Width = 131
+      end    
+      item
+        Title.Caption = 'Цена за единицу(руб.):'
+        Width = 132
+      end    
+      item
+        Title.Caption = 'Скоропортящийся:'
+        Width = 132
+      end>
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    ColWidths = (
+      127
+      257
+      131
+      132
+      132
+    )
+  end
+  object bSaveToFile: TButton
+    Left = 696
+    Height = 25
+    Top = 32
+    Width = 75
+    Caption = 'Сохранить'
+    TabOrder = 2
+    OnClick = bSaveToFileClick
+  end
+  object bLoadFromFile: TButton
+    Left = 696
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Загрузить'
+    TabOrder = 3
+    OnClick = bLoadFromFileClick
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 296
+    Top = 48
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 352
+    Top = 48
+  end
+end
